@@ -1,65 +1,81 @@
 # Clinico Frontend
 
-A modern healthcare management web application built with React, featuring patient-doctor interfaces, video consultations, AI assistance, and appointment scheduling.
+A React.js frontend for hospital management platform.
 
 ## Features
 
-- **User Authentication** - Sign in, Sign up, and registration for patients and doctors
-- **Patient Dashboard** - View appointments, health records, and consultations
-- **Doctor Dashboard** - Manage patient appointments and medical records
-- **Video Consultations** - Conduct virtual visits with patients
-- **AI Consultation** - Get AI-powered medical assistance
-- **Payment Gateway** - Secure payment processing for appointments
-- **Admin Panel** - Comprehensive admin controls
+- User Registration & OTP Login
+- Doctor Search & Booking
+- Patient Dashboard
+- Doctor Dashboard
+- Admin Panel
+- Video Visit Interface
+- AI Health Consultation
+- Payment Gateway Integration
 
 ## Tech Stack
 
-- **Frontend**: React 19
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **HTTP Client**: Axios
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
+- React.js 19
+- Tailwind CSS
+- React Router
+- Axios
+- Framer Motion
+- Lucide React Icons
+- React Hot Toast
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18+)
-- npm or yarn
-
-### Installation
+## Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/PriyanshuGupta1102/clinico_frontend.git
-cd clinico_frontend
-
-# Install dependencies
 npm install
-```
-
-### Running the App
-
-```bash
-# Start development server
 npm start
-
-# Build for production
-npm run build
 ```
+
+## Available Scripts
+
+- `npm start` - Development server
+- `npm run build` - Production build
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── context/          # React context (Auth)
-├── pages/            # Page components
-├── App.js            # Main app component
-└── index.js          # Entry point
+├── components/
+│   ├── DoctorCard.jsx
+│   ├── Footer.jsx
+│   ├── InteractiveLogo.jsx
+│   ├── Navbar.jsx
+│   └── Sidebar.jsx
+├── context/
+│   └── AuthContext.js
+├── pages/
+│   ├── AIConsult.jsx
+│   ├── AdminPanel.jsx
+│   ├── Dashboard.jsx
+│   ├── DoctorDashboard.jsx
+│   ├── DoctorRegister.jsx
+│   ├── DoctorVideoVisit.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── PatientDashboard.jsx
+│   ├── PaymentGateway.jsx
+│   ├── Register.jsx
+│   ├── SignIn.jsx
+│   ├── SignUp.jsx
+│   └── VideoVisit.jsx
+├── App.js
+├── index.js
+└── index.css
+```
+
+## Environment Variables
+
+Create `.env` file in root:
+```
+REACT_APP_API_URL=http://localhost:5000
 ```
 
 ## License
 
-MIT
+ISC
